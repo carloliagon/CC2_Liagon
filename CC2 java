@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class UserInput {
+    public static void main(String[] args) {
+    
+       System.out.println("What is your Age:");
+       int number = scanner.nextInt();
+       
+       System.out.println("Enter a decimal number:");
+       float decimal = scanner.nextFloat();
+       
+       System.out.println("Where do you live");
+       char character = scanner.next().charAt(0);
+       
+       System.out.println("Are you a college? (True or Flase)");
+       boolean college = scanner.nextBoolean();
+       
+       System.out.println("What is your Name");
+       String name = scanner.nextLine();
+       
+       
+       System.out.println("\n\nYour are + age: + ");
+       System.out.println("\n\nYour decimal number is: + decimal +  ");
+       System.out.println("\n\nYou live in: + live + ");
+       System.out.println("\n\nYou are: + college + ");
+       System.out.println("\n\nHello + name + !");
+       
+    }
+    
+}
