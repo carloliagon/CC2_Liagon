@@ -1,0 +1,33 @@
+// John Carlo M. Liagon
+// September 21, 2024
+// Grocery Discount Calculator
+import java.util.Scanner;
+
+public class Lab4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the total purchase amount (in PHP): ");
+        double totalAmount = scanner.nextDouble();
+        double discount = 0;
+        
+        if (totalAmount < 1000) {
+            discount = 0; // it no discount
+        } else if (totalAmount >= 1000 && totalAmount <= 5000) {
+            discount = totalAmount * 0.05; // 5% discount 
+        } else if (totalAmount >= 5000 && totalAmount <= 10000) {
+            discount = totalAmount * 0.10; //10% discount 
+        } else if  (totalAmount > 10000) {
+            discount = totalAmount * 0.15; // 15% discount
+        }
+        double finalAmount = totalAmount - discount;
+        
+        // output result
+        System.out.printf("Total Amount: PHP %.2f%n", totalAmount);
+        System.out.printf("Discount: PHP %2f%n", discount);
+        System.out.printf("Final Amount After Discount: PHP %.2f%n", finalAmount);
+        
+        scanner.close();
+    }
+    
+}
