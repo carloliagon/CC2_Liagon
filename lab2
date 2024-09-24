@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        // Define the length and width of the rectangle
+        int length = 12; // Example of value for length
+        int width = 37;  // Example value for width
+        int area;
+        int perimeter;
+
+        // Then calculate the area of the rectangle
+        area = length * width;
+
+        // Calculate the perimeter of the rectangle
+        perimeter = 2 * (length + width);
+
+        // Display the output
+        System.out.println("Length is:" + length);
+        System.out.println("Width is:" + width);
+        System.out.println("Area of the rectangle is:" + area);
+        System.out.println("Perimeter of the rectangle is:" + perimeter);
+    }
+}
