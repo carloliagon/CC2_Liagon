@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+class Lab5 {
+    public static void main(String[] args) {
+        
+        // Scanner to take user input with mune displayed 
+        Scanner mySystem = new Scanner(System.in);
+        System.out.println("Select a order that you want to order: ");
+        System.out.println("1. Burger    - PHP 100");
+        System.out.println("2. Fries     - PHP 50");
+        System.out.println("3. Soda      - PHP 30");
+        System.out.println("4. Ice Cream - PHP 45");
+        System.out.println("5. Exit");
+        
+        // Variable for each item
+        int myChoice = mySystem.nextLine();
+        int burger, fries, soda, iceCream;
+        
+        // If statement for each individual
+        if (myChoice >= 1 && myChoice <= 4) {
+            switch (myChoice) {
+                
+                
+                case 1:
+                    System.out.print("Enter the quality: ");
+                    int quantityB = mySystem.nextInt();
+                    System.out.println("You ordered Burger.");
+                    burger = 100;
+                    int totalAmountB = quantityB * burger;
+                    System.out.println("Total amount: " + totalAmountB + "PHP");
+                    break;
+                 case 2:
+                    System.out.print("Enter the quality: ");
+                    int quantityF = mySystem.nextInt();
+                    System.out.println("You ordered Fries.");
+                    fries = 50;
+                    int totalAmount = quantityF * fries;
+                    System.out.println("Total amount: " + totalAmountF + "PHP");
+                    break;
+                 case 3:
+                    System.out.print("Enter the quality: ");
+                    int quantityS = mySystem.nextInt();
+                    System.out.println("You ordered Soda.");
+                    soda = 30;
+                    int totalAmountS = quantityS * Soda;
+                    System.out.println("Total amount: " + totalAmountS + "PHP");
+                    break;
+                 case 4:
+                    System.out.print("Enter the quality: ");
+                    int quantityI = mySystem.nextInt();
+                    System.out.println("You ordered Ice Cream.");
+                    ice cream = 45;
+                    int totalAmountI = quantityI * ice cream;
+                    System.out.println("Total amount: " + totalAmountI + "PHP");
+                    break;
+                case 5: 
+                    break;
+                    
+                default:
+                System.out.println("Please enter a valid input");
+            }
+        }
+    }
+}
