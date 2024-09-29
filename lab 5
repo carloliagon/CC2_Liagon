@@ -1,6 +1,10 @@
+// John Carlo M. Liagon
+// September 29, 2024
+// Lab5: Retauran Order System
+
 import java.util.Scanner;
 
-class RestaaurantOrderSystem {
+class RestaurantOrderSystem {
     public static void main(String[] args) {
         
         // Scanner to take user input with mune displayed 
@@ -11,69 +15,8 @@ class RestaaurantOrderSystem {
         System.out.println("3. Soda      - PHP 30");
         System.out.println("4. Ice Cream - PHP 45");
         System.out.println("5. Exit");
-        
-        // Variable for each item
-        int myChoice = mySystem.nextInt();
-        int burger, fries, soda, iceCream;
-        
-        // If statement for each individual
-        if (myChoice >= 1 && myChoice <= 4) {
-            switch (myChoice) {
-                
-                
-                case 1:
-                    System.out.print("Enter the quality: ");
-                    int quantityB = mySystem.nextInt();
-                    System.out.println("You ordered Burger.");
-                    burger = 100;
-                    int totalAmountB = quantityB * burger;
-                    System.out.println("Total amount: " + totalAmountB + "PHP");
-                    break;
-                 case 2:
-                    System.out.print("Enter the quantity: ");
-                    int quantityF = mySystem.nextInt();
-                    System.out.println("You ordered Fries.");
-                    fries = 50;
-                    int totalAmount = quantityF * fries;
-                    System.out.println("Total amount: " + totalAmountF + "PHP");
-                    break;
-                 case 3:
-                    System.out.print("Enter the quantity: ");
-                    int quantityS = mySystem.nextInt();dd
-                    System.out.println("You ordered Soda.");
-                    soda = 30;
-                    int totalAmountS = quantityS * soda;
-                    System.out.println("Total amount: " + totalAmountS + "PHP");
-                    break;
-                 case 4:
-                    System.out.print("Enter the quatity: ");
-                    int quantityI = mySystem.nextInt();
-                    System.out.println("You ordered Ice Cream.");
-                    iceCream = 45;
-                    int totalAmountI = quantityI * iceCream;
-                    System.out.println("Total amount: " + totalAmountI + "PHP");
-                    break;
-                case 5: 
-                    break;
-                    
-                default:
-                System.out.println("Please enter a valid input");
-            }
-        }
-    }
-}import java.util.Scanner;
+        System.out.print("Please select an option (1-5): ");
 
-class RestaaurantOrderSystem {
-    public static void main(String[] args) {
-        
-        // Scanner to take user input with mune displayed 
-        Scanner mySystem = new Scanner(System.in);
-        System.out.println("Select a order that you want to order: ");
-        System.out.println("1. Burger    - PHP 100");
-        System.out.println("2. Fries     - PHP 50");
-        System.out.println("3. Soda      - PHP 30");
-        System.out.println("4. Ice Cream - PHP 45");
-        System.out.println("5. Exit");
         
         // Variable for each item
         int myChoice = mySystem.nextInt();
@@ -98,11 +41,11 @@ class RestaaurantOrderSystem {
                     System.out.println("You ordered Fries.");
                     fries = 50;
                     int totalAmount = quantityF * fries;
-                    System.out.println("Total amount: " + totalAmountF + "PHP");
+                    System.out.println("Total amount F: " + totalAmount + "PHP");
                     break;
                  case 3:
                     System.out.print("Enter the quantity: ");
-                    int quantityS = mySystem.nextInt();dd
+                    int quantityS = mySystem.nextInt();
                     System.out.println("You ordered Soda.");
                     soda = 30;
                     int totalAmountS = quantityS * soda;
