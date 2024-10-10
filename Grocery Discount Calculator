@@ -10,20 +10,20 @@ public class Lab4 {
         System.out.print("Enter the total purchase amount (in PHP): ");
         double totalAmount = scanner.nextDouble();
         double discount = 0;
-        
+        double firstDiscount, secondDiscount, thirdDiscount;
         if (totalAmount < 1000) {
             System.out.println("Discount applied 0%"); // it no discount
             System.out.println("Final price after discoucnt PHP: " + totalAmount);
         } else if (totalAmount >= 1000 && totalAmount <= 5000) {
-            double firstDiscount = totalAmount * 0.05;
+            firstDiscount = totalAmount * 0.05;
             System.out.println("Discount applied 5%"); // 5% discount
             System.out.println("Final price after discoucnt PHP: " + (totalAmount - firstDiscount));
         } else if (totalAmount >= 5000 && totalAmount <= 10000) {
-            double secondDiscount = totalAmount * 0.10;
+            secondDiscount = totalAmount * 0.10;
             System.out.println("Discount applied 10%"); //10% discount 
             System.out.println("Final price after discoucnt PHP: " + (totalAmount - secondDiscount));
         } else if  (totalAmount > 10000) {
-            double thirdDiscount =  totalAmount * 0.15;
+            thirdDiscount =  totalAmount * 0.15;
             System.out.println("Discount applied 15%"); // 15% discount
             System.out.println("Final price after discoucnt PHP: " + (totalAmount - thirdDiscount));
         }
