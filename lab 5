@@ -20,7 +20,7 @@ class RestaurantOrderSystem {
         
         // Variable for each item
         int myChoice = mySystem.nextInt();
-        int burger, fries, soda, iceCream;
+        int burger, fries, soda, iceCream, quantity, totalAmount;
         
         // If statement for each individual
         if (myChoice >= 1 && myChoice <= 4) {
@@ -29,35 +29,35 @@ class RestaurantOrderSystem {
                 
                 case 1:
                     System.out.print("Enter the quality: ");
-                    int quantityB = mySystem.nextInt();
+                     quantity = mySystem.nextInt();
                     System.out.println("You ordered Burger.");
                     burger = 100;
-                    int totalAmountB = quantityB * burger;
-                    System.out.println("Total amount: " + totalAmountB + "PHP");
+                     totalAmount = quantity * burger;
+                    System.out.println("Total amount: " + totalAmount + "PHP");
                     break;
                  case 2:
                     System.out.print("Enter the quantity: ");
-                    int quantityF = mySystem.nextInt();
+                     quantity = mySystem.nextInt();
                     System.out.println("You ordered Fries.");
                     fries = 50;
-                    int totalAmount = quantityF * fries;
+                    totalAmount = quantity * fries;
                     System.out.println("Total amount F: " + totalAmount + "PHP");
                     break;
                  case 3:
                     System.out.print("Enter the quantity: ");
-                    int quantityS = mySystem.nextInt();
+                    quantity = mySystem.nextInt();
                     System.out.println("You ordered Soda.");
                     soda = 30;
-                    int totalAmountS = quantityS * soda;
-                    System.out.println("Total amount: " + totalAmountS + "PHP");
+                    totalAmount = quantity * soda;
+                    System.out.println("Total amount: " + totalAmount + "PHP");
                     break;
                  case 4:
                     System.out.print("Enter the quatity: ");
-                    int quantityI = mySystem.nextInt();
+                    quantity = mySystem.nextInt();
                     System.out.println("You ordered Ice Cream.");
                     iceCream = 45;
-                    int totalAmountI = quantityI * iceCream;
-                    System.out.println("Total amount: " + totalAmountI + "PHP");
+                    totalAmount = quantity * iceCream;
+                    System.out.println("Total amount: " + totalAmount + "PHP");
                     break;
                 case 5: 
                     break;
